@@ -23,4 +23,7 @@ def get_boro(place):
     if (place in staten_island):
         return "Staten Island"
     
-df['boro'] = df['where'].map(get_boro)
+# df['boro'] = df['where'].map(get_boro)
+
+# Remove random stuff
+# newdf = newdf.drop(newdf[newdf['boro']==1].query('price > 0').sample(frac=.2).index)
